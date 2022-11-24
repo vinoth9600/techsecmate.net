@@ -9,7 +9,8 @@
 
 <body>
         <h1>Welcome to my Cookie Consent Webiste</h1>
-
+	
+<!-- Below section is a Form to collect Form Based Consent -->
 <form id ="145" action="#" method="post">
 	<label for="Name">Enter Name</label>
 	<input type="text" name="name" id="name"><br><br>
@@ -26,13 +27,15 @@
 	</div>
         <input type="button" id="submit" name="submit" value="SUBMIT" onclick="sendResponse()" />
 </form>
+<!-- End of Form Based Consent -->
 
+<!-- Response for Onclick event for Form based Consent -->
 <script>
 function sendResponse() {
 	alert("Consent Submitted successfully") }
 </script>
     
-<!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+<!-- Script for Displaying and Collecting Consent Banner details -->
 <script>
 (function () {
 	var s = document.createElement('script');
@@ -46,7 +49,9 @@ function sendResponse() {
 	s.addEventListener('load', function() { window.initCmp(); });
 })()
 </script>
-    
+<!-- End of Cookie Consent Management -->
+	
+<!-- Script for Displaying and Collecting Universal Consent Management -->
 <script>
                     window.addEventListener('load', function() {
                     var codeGenMetadata = {
@@ -203,5 +208,6 @@ function sendResponse() {
                             }
                         }
                     })</script>
+<!-- End of Universal Consent Management -->
 	
 </body>
