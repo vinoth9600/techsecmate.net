@@ -54,10 +54,10 @@ function sendResponse() {
                         formPropertyId: 5,
                         formSelector: '[id*="145"]',
                         subjectIdentifiers: [{"name":"name","selector":"[name = \"name\"]","isPrimary":true},{"name":"Enter Email","selector":"[name = \"email\"]","isPrimary":false},{"name":"submit","selector":"[name = \"submit\"]","isPrimary":false}],
-                        consentIdentifiers: [{"type":"checkbox","name":"Consent","selector":"[name = \"Consent\"]","propertyId":1366,"consentValue":"checked"},{"type":"checkbox","name":"DAC","selector":"[name = \"DAC\"]","propertyId":1367,"consentValue":"checked"},{"type":"checkbox","name":"SDI","selector":"[name = \"SDI\"]","propertyId":1368,"consentValue":"checked"}],
+                        consentIdentifiers: [{"type":"checkbox","name":"Consent","selector":"[name = \"Consent\"]","propertyId":1369,"consentValue":"checked"},{"type":"checkbox","name":"DAC","selector":"[name = \"DAC\"]","propertyId":1370,"consentValue":"checked"},{"type":"checkbox","name":"SDI","selector":"[name = \"SDI\"]","propertyId":1371,"consentValue":"checked"}],
                         consentTrigger: {
-                            action: 'submit',
-                            selector: 'Click'
+                            action: 'click',
+                            selector: '[name = "submit"]'
                         }
                     };
 
