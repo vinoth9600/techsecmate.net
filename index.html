@@ -10,7 +10,7 @@
 <body>
         <h1>Welcome to my Cookie Consent Webiste</h1>
 
-<form id ="145" action="#">
+<form id ="145" action="#" method="post">
 	<label for="Name">Enter Name</label>
 	<input type="text" name="name" id="name"><br><br>
 	<label for="email">Enter Email</label>
@@ -24,9 +24,11 @@
         <input type="checkbox" id="SDI" name="SDI" value="SDI" />
 	<label for="SDI">Sensitive Data Intelligence</label> <br><br><br>
 	</div>
-        <input type="button" id="submit" name="submit" value="SUBMIT" />
-
+        <input type="button" id="submit" name="submit" value="SUBMIT" onclick="sendResponse()" />
 </form>
+
+function sendEmail() {
+	alert("mail sent successfully") }
     
 <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
 <script>
