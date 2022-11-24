@@ -17,14 +17,11 @@
 	<label for="email">Enter Email</label>
 	<input type="email" name="email" id="email"><br><br><br>
 	
-	<div>
-	<input type="radio" id="Consent" name="Consent" value="ConsentManagement" />
-	<label for="Consent">Consent Management</label>
-        <input type="radio" id="DAC" name="DAC" value="DAC" />
-	<label for="DAC">Data Access Governance</label>
-        <input type="radio" id="SDI" name="SDI" value="SDI" />
-	<label for="SDI">Sensitive Data Intelligence</label> <br><br><br>
-	</div>
+	<p> Choose your appropriate topic: </p>
+	<input type="radio" name="SDI" id="SDI" value="Sensitive Data Intelligence">Summer<br> 
+	<input type="radio" name="DAC" id="DAC" value="Data Access Governance">Winter<br> 
+	<input type="radio" name="Consent" id="Consent" value="Consent Management">Rainy<br><br>
+
         <input type="button" id="submit" name="submit" value="SUBMIT" onclick="sendResponse()" />
 </form>
 <!-- End of Form Based Consent -->
