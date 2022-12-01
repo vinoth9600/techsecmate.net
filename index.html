@@ -34,27 +34,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- This links your css file to the html -->
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
-
 </head>
 
 <body>	
+	
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNCNWD4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-        <h1>Please Provide Your Consent</h1>
-	
-<input type="button" value="Set Cookie" onclick="setCookie()">  
-<input type="button" value="Get Cookie" onclick="ReadCookie()"/><br><br>
-	
-<input type="button" value="Universal Consent" onClick="location.href='Universal_Page.html'">
-	
-<!-- Below section is a Form to collect Form Based Consent -->
 
+<!-- Below section is a Form to collect Form Based Consent -->
+<h1>Please Provide Your Consent</h1>
+<form id ="145" action="#" method="post">
+	<label for="Name">Enter Name - </label>
+	<input type="text" name="name" id="name"><br><br>
+	<label for="email">Enter Email - </label>
+	<input type="email" name="email" id="email"><br><br><br>
+	
+	<input type="checkbox" id="Agree" name="Agree" value="Agree">
+        <label for="Agree"> For us to legally enforce your details, users must first agree to our terms and conditions</label><br><br><br>
+
+        <input type="button" id="submit" name="submit" value="SUBMIT" onclick="sendResponse()" /><br><br>
+	<input type="button" value="Set Cookie" onclick="setCookie()">  
+	<input type="button" value="Get Cookie" onclick="ReadCookie()"/><br><br>
+</form>	
 <!-- End of Form Based Consent -->
 	
 <script src="Get_Cookie.js"></script> 
 <script src="Set_Cookie.js"></script>    
 <script src="Consent.js"></script>
+<script src="Alert.js"></script>
+<script src="Universal.js"></script>
 	
 </body>
